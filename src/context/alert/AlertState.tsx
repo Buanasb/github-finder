@@ -2,13 +2,13 @@ import React, { useReducer } from "react";
 import { ReducerType } from "src/constants";
 import { AlertStateType } from "../types";
 import { AlertContext } from "./AlertContext";
-import GithubReducer from "./AlertReducer";
+import AlertReducer from "./AlertReducer";
 
 const AlertState = (props: any) => {
   const initialState: AlertStateType = {
     alert: null,
   };
-  const [state, dispatch] = useReducer(GithubReducer, initialState);
+  const [state, dispatch] = useReducer(AlertReducer, initialState);
   //Get Alert
   const showAlert = (msg: string, type: string) => {
     dispatch({ type: ReducerType.SET_ALERT, payload: { msg, type } });

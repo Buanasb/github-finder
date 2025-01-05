@@ -1,7 +1,7 @@
 import { ReducerType } from "src/constants";
 import { ActionType, AlertStateType } from "../types";
 
-const GithubReducer = (
+const AlertReducer = (
   state: AlertStateType,
   action: ActionType
 ): AlertStateType => {
@@ -23,4 +23,4 @@ const GithubReducer = (
   }
 };
 
-export default GithubReducer;
+export default AlertReducer;
