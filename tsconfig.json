@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react", // Or "react-jsx" for React 17+
+    "moduleResolution": "node",
+    "types": ["react", "react-dom", "node"], // Ensure these are included
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "useDefineForClassFields": true
+  },
+  "include": ["src", "env.d.ts"],
+  "exclude": ["node_modules"]
+}
